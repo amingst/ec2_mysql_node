@@ -7,7 +7,7 @@ function submitdb() {
     }
 
     //console.log(formData)
-    postData('http://localhost:3000/submit', formData);
+    postData('http://localhost:3000/', formData);
 
 }
 

@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
     res.sendFile(publicpath + "html/index.html")
 })
 
-app.post('/submit', (req, res) => {
+app.post('/', (req, res) => {
     const newUser = User.build({ id: 1, username: req.body.username, password: req.body.password })
     console.log(newUser instanceof User);
     console.log(newUser.username);
